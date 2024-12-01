@@ -1,9 +1,11 @@
 # esx_peyote
 
-Soft Dependency:
+<h3>Soft Dependency:<h3>
   ox_inventory
 
+# Installation
 Add
+```lua
 ['peyote'] = {
 		label = 'Peyote',
 		weight = 20,
@@ -14,12 +16,14 @@ Add
 			usetime = 2500
 		}
 	},
-
+```
  into ox_inventory/data/items.lua and
+```lua
 Item('peyote', function(data, slot)
 	ox_inventory:useItem(data, function (data)
 		TriggerEvent('esx_peyote:usePeyote')
 	end)	
 end)
+```
 into ox_inventory/modules/items/client.lua
  

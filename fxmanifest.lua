@@ -1,7 +1,7 @@
 fx_version 'bodacious'
 game 'gta5'
 
-author 'You'
+author 'Phantom1092'
 version '1.0.0'
 
 client_scripts {
@@ -17,6 +17,10 @@ shared_scripts {
     '@es_extended/imports.lua',
     '@es_extended/locale.lua',
     'config.lua',
-    'shared.lua'
+}
+
+dependencies {
+    'es_extended',
+    'ox_inventory'
 }
 
